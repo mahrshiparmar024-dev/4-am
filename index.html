@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A quiet, cinematic journal about distance, memory, and letting go."
+    />
+    <title>04:00 A.M. — A private hour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#journal">Skip to the journal</a>
+
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-bar"></div>
+    </div>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <div class="memory-layer" aria-hidden="true">
+      <canvas class="memory-heart" id="memory-heart"></canvas>
+    </div>
+
+    <audio
+      id="ambient-audio"
+      src="assets/music.mp3"
+      preload="auto"
+      aria-label="Ambient background music"
+    ></audio>
+
+    <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Unmute ambient music">
+      <span class="sound-icon sound-icon--muted" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="sound-label">Sound off</span>
+    </button>
+
+    <main id="journal">
+      <section class="hero page-section" aria-labelledby="hero-title">
+        <div class="page-section__inner hero__inner">
+          <p class="eyebrow reveal" data-reveal="fade">A private hour <span>·</span> 01</p>
+          <h1 id="hero-title" class="hero__title reveal-heading">04:00 A.M.</h1>
+          <p class="hero__subtitle reveal" data-reveal="fade">
+            Some clocks don't tell time.<br />
+            They tell stories.
+          </p>
+          <a class="scroll-cue" href="#beginning" aria-label="Continue reading">
+            <span class="scroll-cue__line" aria-hidden="true"></span>
+            <span class="scroll-cue__arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="beginning" class="page-section journal-section" aria-labelledby="beginning-title">
+        <div class="page-section__inner">
+          <p class="eyebrow reveal" data-reveal="fade">02 <span>·</span> Beginning</p>
+          <h2 id="beginning-title" class="section-title reveal-heading">Before the silence.</h2>
+          <div class="prose prose--intro">
+            <p class="reveal" data-reveal="body">
+              There was a time when distance felt temporary. A number on a screen. A small inconvenience between two ordinary lives.
+            </p>
+            <p class="reveal" data-reveal="body">
+              We made a home out of the hours no one else could see.
+            </p>
+          </div>
+          <div class="section-mark" aria-hidden="true">•</div>
+        </div>
+      </section>
+
+      <section id="memories" class="page-section journal-section" aria-labelledby="memories-title">
+        <div class="page-section__inner">
+          <p class="eyebrow reveal" data-reveal="fade">03 <span>·</span> Memories</p>
+          <h2 id="memories-title" class="section-title reveal-heading">The small things stay.</h2>
+          <div class="memory-list" role="list">
+            <p class="memory-line reveal" data-reveal="body" role="listitem">A good morning sent before the day began.</p>
+            <p class="memory-line reveal" data-reveal="body" role="listitem">A photograph of something ordinary, made important.</p>
+            <p class="memory-line reveal" data-reveal="body" role="listitem">The kind of silence that never needed explaining.</p>
+            <p class="memory-line reveal" data-reveal="body" role="listitem">A voice on the other side of a difficult night.</p>
+          </div>
+          <div class="section-mark" aria-hidden="true">✦</div>
+        </div>
+      </section>
+
+      <section id="never-see" class="page-section journal-section journal-section--quiet" aria-labelledby="never-see-title">
+        <div class="page-section__inner">
+          <p class="eyebrow reveal" data-reveal="fade">04 <span>·</span> What remains</p>
+          <h2 id="never-see-title" class="section-title reveal-heading">Things I'll Never See</h2>
+          <div class="never-see-list">
+            <p class="never-see-line reveal" data-reveal="body">The pages I never got to finish.</p>
+            <p class="never-see-line reveal" data-reveal="body">The messages I never sent.</p>
+            <p class="never-see-line reveal" data-reveal="body">The dreams I never stopped imagining.</p>
+            <p class="never-see-line reveal" data-reveal="body">The future that only existed inside my head.</p>
+          </div>
+          <div class="section-mark" aria-hidden="true">•</div>
+        </div>
+      </section>
+
+      <section id="letter" class="page-section letter-section" aria-labelledby="letter-title">
+        <div class="page-section__inner">
+          <p class="eyebrow reveal" data-reveal="fade">05 <span>·</span> Main letter</p>
+          <h2 id="letter-title" class="section-title reveal-heading">To the Person I Once Called Home</h2>
+          <div class="letter-body">
+            <p class="letter-paragraph reveal" data-reveal="body">There are people we meet for a season, and then there are people who quietly become a part of the way our heart beats.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">You were the second kind.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I still remember the version of me that believed distance was only a number. I believed that love could survive time zones, bad days, missed calls, and thousands of kilometers—as long as two people kept choosing each other.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">So I chose you.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">On ordinary mornings.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">On difficult nights.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">On days when life felt heavy.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">When everyone else was asleep and only my screen knew your name, I chose you.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I never counted the hours we spent talking, the times I waited, or the little surprises I made for you. Those GitHub pages, those words, those late-night ideas... they were never obligations. They were simply my way of making distance feel a little smaller. Every page I built carried one quiet hope—that somewhere, you'd smile because someone, far away, was thinking about you.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Maybe that's why goodbye feels so loud.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">People think heartbreak begins when two people say goodbye.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I don't think it does.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Heartbreak begins the first morning you wake up and instinct tells you they're still yours... until reality gently reminds you they are not.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">The world keeps moving.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">The sun still rises.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">People still laugh.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Coffee still gets cold.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Everything looks exactly the same.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Yet somehow, your own little universe feels unbelievably empty.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">The hardest part isn't that you're gone.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">The hardest part is that I still catch myself wanting to tell you about small things.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">A song I'd know you'd love.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">A meme that would've made you laugh.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">A sunset I'd instinctively take a picture of...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">...before remembering there is nowhere left to send it.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">It's strange how love works.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">It isn't built on grand gestures.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">It grows through ordinary moments.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">A "Good morning."</p>
+            <p class="letter-paragraph reveal" data-reveal="body">A "Did you eat?"</p>
+            <p class="letter-paragraph reveal" data-reveal="body">A random photo.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">A late-night conversation that somehow makes tomorrow feel lighter.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Those little moments quietly become a home.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">And when that home disappears...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Even ordinary things begin to hurt.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I used to believe that love meant never giving up.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Now I think love is also knowing when someone's heart has already left, even if their words haven't.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">There is no point in blaming you anymore.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Maybe people simply outgrow the promises they once made.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Maybe forever sometimes lasts only until life changes.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I don't know.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">And perhaps I never will.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">But if there is one thing I hope you never question, let it be this:</p>
+            <p class="letter-paragraph reveal" data-reveal="body">You were loved.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Not in loud, dramatic ways.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">But in quiet ones.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">In every page I built when no one asked me to.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">In every paragraph I rewrote because I wanted it to be perfect for you.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">In every notification that made me smile.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">In every prayer where your happiness somehow came before mine.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">In every future I imagined, where you already had a place without ever asking for one.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">You were loved with the kind of love that expected very little...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Except honesty.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Today, I don't write this to ask you to come back.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I don't write this to change your mind.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Love that has to convince someone to stay has already forgotten what love is.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I write this because every story deserves an ending written with the same sincerity as its beginning.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">You once became my safest place.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Then, without warning, you became the lesson I never asked to learn.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">And despite everything...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I don't hate you.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Hate would mean carrying you forever in the form of anger.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I'd rather carry you as gratitude.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Gratitude for every laugh that was genuine.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">For every memory that made distance disappear.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">For reminding me that my heart was capable of loving someone so completely.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">You changed me.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Not because you stayed.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">But because, for a while, you made me believe in forever.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Maybe forever was never meant to be measured by years.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Maybe forever is measured by how deeply someone changes your soul after they're gone.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">If that's true...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Then a part of you will always live quietly within mine.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Not as regret.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Not as bitterness.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Not even as a wound.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">But as proof...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">That once, in this enormous universe,</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I loved someone with everything I had.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">And I have no regrets for loving you that way.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">One day, years from now, you might forget the messages, the calls, the dates, even the reasons why our paths separated.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">But I hope you never forget one simple truth.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Somewhere in this world, there was a boy who looked at a glowing screen late at night, smiled because your name appeared, and believed he had found home.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Maybe we weren't meant to last forever.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Maybe our story was only meant to teach us something about love, trust, and letting go.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">If that's the case...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Thank you.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Thank you for every smile that was real.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I'm sorry for every dream that reality couldn't protect.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I sincerely hope life gives you everything you've ever wished for.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">And if we ever become strangers again...</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I hope we smile.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Not because we forgot each other.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">But because we remember that, for one beautiful chapter of our lives,</p>
+            <p class="letter-paragraph reveal" data-reveal="body">we loved honestly.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Goodbye, my once-home.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">Take care of yourself.</p>
+            <p class="letter-paragraph reveal" data-reveal="body">I'll take care of the memories.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="closing" class="closing page-section" aria-labelledby="closing-title">
+        <div class="closing__veil" aria-hidden="true"></div>
+        <div class="page-section__inner closing__inner">
+          <h2 id="closing-title" class="closing__title">
+            <span>Thank you</span>
+            <span>for being</span>
+            <span>one beautiful chapter</span>
+            <span>of my life.</span>
+          </h2>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
